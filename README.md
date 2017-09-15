@@ -19,6 +19,7 @@ Now, the client in container 2 would be able to call any available services (jus
 * Linux machine
 * git
 * [Docker](https://docs.docker.com/engine/installation/)
+* [docker-compose](https://docs.docker.com/compose/install/#install-compose)
 
 ## How to run?
 Terminal 1
