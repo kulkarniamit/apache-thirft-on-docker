@@ -1,0 +1,18 @@
+tclient:
+    image: thecuriouscoder/thriftwithdocker:1.0
+    links:
+        - tserver
+    tty: true
+    stdin_open: true
+
+tserver:
+    image: thecuriouscoder/thriftwithdocker:1.0
+    # WORKDIR: /thrift-book-c_glib/c_glib/simple/
+    command: bash -c "./server"
+    tty: true
+    stdin_open: true
+    ports:
+        - 5000:5000
+    environment:
+        # Make the server aware of exposed port
+        - SERVICE_PORT=5000
