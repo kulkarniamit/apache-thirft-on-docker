@@ -9,6 +9,11 @@ Apache Thrift example in C using [simonsouth/thrift-book-c_glib](https://github.
 * Apache thrift C client connects to the server using the `SERVICE_PORT`
 * Server responds with response generated on server container
 
+## Prerequisites
+* Linux machine
+* git
+* [Docker](https://docs.docker.com/engine/installation/)
+
 ## How to run?
 Terminal 1
 ```sh
