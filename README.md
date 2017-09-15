@@ -2,7 +2,7 @@
 
 Apache Thrift example in C using [simonsouth/thrift-book-c_glib](https://github.com/simonsouth/thrift-book-c_glib)
 
-* We use docker-compose to create 2 containers (Client and Server)
+* We use `docker-compose.yml` to create 2 containers (Client and Server)
 * Client is linked to server in `docker-compose.yml`
 * Server exposes port `5000` to serve requests using Apache Thrift
 * Server is made aware of exposed ports using the environment variable `SERVICE_PORT`
