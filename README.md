@@ -45,9 +45,9 @@ CONTAINER ID        IMAGE                                  COMMAND              
 9975e2964bf2        thecuriouscoder/thriftwithdocker:1.0   "/bin/sh -c /bin/bash"   12 minutes ago      Up About a minute                            thriftondocker_tclient_1
 bddfe0092fa6        thecuriouscoder/thriftwithdocker:1.0   "bash -c ./server"       12 minutes ago      Up About a minute   0.0.0.0:5000->5000/tcp   thriftondocker_tserver_1
 
-$ docker exec thriftondocker_tclient_1 /thrift-book-c_glib/c_glib/simple/client
+$ docker exec `docker ps -q --filter "name=tclient"` /thrift-book-c_glib/c_glib/simple/client
 Hello world!
-$ docker exec thriftondocker_tclient_1 /thrift-book-c_glib/c_glib/simple/client
+$ docker exec `docker ps -q --filter "name=tclient"` /thrift-book-c_glib/c_glib/simple/client
 Hello world!
 
 ```
